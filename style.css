@@ -1,14 +1,15 @@
 body {
   font-family: "Public Sans", sans-serif;
-  overflow-x: hidden;
 }
+
 nav {
   font-weight: 600;
 }
+
 ul {
-  /* border: 1px dashed violet; */
   margin: 0 auto;
 }
+
 h1 {
   margin-bottom: 2rem;
   color: hsl(233, 26%, 24%);
@@ -16,7 +17,6 @@ h1 {
 h1.title-heading {
   font-size: 3rem;
 }
-
 h3 {
   margin: 2rem 0;
 }
@@ -26,6 +26,7 @@ h5 {
 h5:hover {
   color: hsl(192, 70%, 51%);
 }
+
 .btn {
   border-radius: 2rem;
   background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
@@ -40,6 +41,7 @@ h5:hover {
 section {
   background-color: hsl(0, 0%, 98%);
   padding: 6rem 0;
+  z-index: 1;
 }
 section.intro {
   position: relative;
@@ -56,6 +58,7 @@ section.intro:after {
   background-repeat: no-repeat;
   background-position: 100% 40%;
   background-size: 52%;
+  z-index: -1;
 }
 section.intro:before {
   content: "";
@@ -65,11 +68,12 @@ section.intro:before {
   background-repeat: no-repeat;
   background-position: 200% 50%;
   background-size: 80%;
+  z-index: -1;
 }
-
 section.why-easybank {
   background-color: hsl(220, 16%, 96%);
 }
+
 .mini-card {
   padding: 0.6rem;
   border-radius: 1rem;
@@ -93,8 +97,9 @@ section.why-easybank {
   box-shadow: 4px 4px 2rem hsl(210, 14%, 86%);
 }
 .card-text {
-  font-size: 12px;
+  font-size: 15px;
 }
+
 footer {
   background: hsl(233, 26%, 24%);
   color: white;
@@ -106,11 +111,17 @@ footer a {
 
 .social img {
   margin: 0 0.5rem;
+  transition: opacity 0.3s;
 }
-
+.social img:hover {
+  opacity: 0.5;
+}
 a:hover {
   color: hsl(136, 65%, 51%);
   transition: 0.3s;
+}
+p.Copyright {
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -141,7 +152,8 @@ a:hover {
     display: block;
   }
 
-  footer .btn {
+  footer .btn,
+  .Copyright {
     display: block;
     width: 200px;
     margin: auto;
