@@ -14,9 +14,7 @@ h1 {
   margin-bottom: 2rem;
   color: hsl(233, 26%, 24%);
 }
-h1.title-heading {
-  font-size: 3rem;
-}
+
 h3 {
   margin: 2rem 0;
 }
@@ -41,11 +39,11 @@ h5:hover {
 section {
   background-color: hsl(0, 0%, 98%);
   padding: 6rem 0;
-  z-index: 1;
 }
 section.intro {
   position: relative;
   padding: 10rem 0;
+  z-index: 0;
 }
 section.intro p {
   margin-bottom: 3rem;
@@ -53,7 +51,10 @@ section.intro p {
 section.intro:after {
   content: "";
   position: absolute;
-  inset: 0 0 0 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-image: url(images/image-mockups.png);
   background-repeat: no-repeat;
   background-position: 100% 40%;
@@ -63,7 +64,10 @@ section.intro:after {
 section.intro:before {
   content: "";
   position: absolute;
-  inset: 0 0 0 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-image: url(images/bg-intro-desktop.svg);
   background-repeat: no-repeat;
   background-position: 200% 50%;
@@ -129,19 +133,29 @@ p.Copyright {
     padding: 28rem 0 10rem 0;
   }
 
+  .title-heading {
+    font-size: 34px;
+  }
+
   section.intro:after {
     content: "";
     position: absolute;
-    inset: 0 0 0 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-image: url(images/image-mockups.png);
     background-repeat: no-repeat;
-    background-position: 50% -400px;
-    background-size: 700px;
+    background-position: 50% -260px;
+    background-size: 580px;
   }
   section.intro:before {
     content: "";
     position: absolute;
-    inset: 0 0 0 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-image: url(images/bg-intro-mobile.svg);
     background-repeat: no-repeat;
     background-position: center -200px;
