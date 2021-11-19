@@ -2,16 +2,14 @@
 
 ![Design preview for the Easybank landing page coding challenge](./images/desktop-preview.jpg)
 
-## [🌎 Live preview ](https://miladxdev.github.io/easybank-landingpage/)
-
-`Created by Milad Gharibi`
+## [LIVE DEMO ☝](https://miladxdev.github.io/easybank-landingpage/)
 
 I used
 
-- HTML
-- CSS
-- Bootstrap
-- JavaScript
+- `HTML`
+- `CSS`
+- `Bootstrap`
+- `JavaScript`
 - `aos` CDN ( animate on scroll )
 
 ## Welcome! 👋
